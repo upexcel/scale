@@ -4,15 +4,8 @@
     angular.module('scale')
         .controller('menuController', menuController);
 
-    function menuController($state, $ionicPlatform, $ionicHistory, tostService, $timeout, $rootScope) {
+    function menuController($state, $ionicPlatform, $ionicHistory, tostService, $timeout, $rootScope, $ionicSideMenuDelegate) {
         var self = this;
-        self.showMenu = false;
-        self.openMenu = function(){
-            self.showMenu = !self.showMenu;
-        }
-        self.closeMenu =function(){
-        	self.showMenu = false;
-        }
         self.mapTab = true;
         self.dataTab = false;
         self.menutabs = true;
@@ -29,7 +22,7 @@
                 self.dataTab = true;
                 self.mapTab = false;
             }
-         })
+         });
         var count = 0;
         $ionicPlatform.registerBackButtonAction(function() {
             var view = $ionicHistory.currentView();
