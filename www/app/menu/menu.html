@@ -1,0 +1,45 @@
+<ion-side-menus>
+   <ion-side-menu-content>
+   <ion-nav-bar class="bar-stable customer-header">
+            <ion-nav-back-button class="button-clear">
+                <i class="ion-arrow-left-c"></i>
+            </ion-nav-back-button>
+            <!-- <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+            </ion-nav-buttons> -->
+            <ion-nav-title>
+               <h1 class="title"><img src="app/assets/img/logo.png" class="logo"> Scale</h1>
+             </ion-nav-title>
+            <ion-nav-buttons side="right">
+                <button class="button" ng-click="menu.openMenu()"><i class="ion-gear-b"></i></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+      <ion-nav-view name="menuContent"></ion-nav-view>
+      <div id="settingMenu"  style="z-index:50" ng-show="menu.showMenu">
+         <div class="text-center">
+            <img class="avatar" src="app/assets/img/Profile_Default.jpg" alt="...">
+            <h4 class="user-name">Email@email.com</h4>
+         </div>
+         <div class="list menu-list">
+            <a class="item" href="#/app/profile" ng-click="menu.closeMenu()">
+            Profile
+            </a>
+            <a class="item" href="" ng-click="menu.closeMenu()">
+            Help
+            </a>
+            <a class="item" href="#/login" ng-click="menu.closeMenu()">
+            Logout
+            </a>
+         </div>
+      </div>
+      <div class="loading-container visible active" ng-show="menu.showMenu" ng-click="menu.closeMenu()"></div>
+      <div class="tabs customer-tabs tabs-icon-only" ng-if="menu.menutabs">
+          <a class="tab-item" ng-class="{'activatedTab':menu.mapTab==true}" href="#/app/customers">
+              <i class="icon ion-map"></i>
+          </a>
+          <a class="tab-item" ng-class="{'activatedTab':menu.dataTab==true}" href="#/app/towkens">
+              <i class="icon ion-clipboard"></i>
+          </a>
+      </div>
+   </ion-side-menu-content>
+</ion-side-menus>

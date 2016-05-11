@@ -1,0 +1,57 @@
+[{
+	"mile":"50",
+	"business_name":"email@email.com",
+	"discount":"20%",
+	"address":"3718 S Veneto Meridian ID, 83642 Meridian Idaho, United States",
+	"time_remaining":"23:15:25",
+	"latitude":28.4860744,
+	"longitude": 77.3282388
+},{
+	"mile":"5",
+	"business_name":"email@email.com",
+	"discount":"10%",
+	"address":"3718 S Veneto Meridian ID, United States",
+	"time_remaining":"23:15:25",
+	"latitude":28.5980844,
+	"longitude": 77.3283388
+},{
+	"mile":"10",
+	"business_name":"email@email.com",
+	"discount":"20%",
+	"address":"83642 Meridian Idaho, United States",
+	"time_remaining":"23:15:25",
+	"latitude":28.5990944,
+	"longitude": 77.3254388
+},{
+	"mile":"25",
+	"business_name":"email@email.com",
+	"discount":"10%",
+	"address":"United States",
+	"time_remaining":"23:15:25",
+	"latitude":28.5971044,
+	"longitude": 77.3212388
+},{
+	"mile":"10",
+	"business_name":"email@email.com",
+	"discount":"20%",
+	"address":"3718 S Veneto Meridian ID",
+	"time_remaining":"23:15:25",
+	"latitude":28.5965724,
+	"longitude": 77.3284188
+},{
+	"mile":"50",
+	"business_name":"email@email.com",
+	"discount":"10%",
+	"address":"3718 S Veneto Meridian ID, 83642 Meridian Idaho, United States",
+	"time_remaining":"23:15:25",
+	"latitude":28.5110744,
+	"longitude": 77.3284588
+},{
+	"mile":"5",
+	"business_name":"email@email.com",
+	"discount":"20%",
+	"address":"83642 Meridian Idaho",
+	"time_remaining":"23:15:25",
+	"latitude":28.5150744,
+	"longitude": 77.3387888
+}]

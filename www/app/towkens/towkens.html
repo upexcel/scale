@@ -1,0 +1,21 @@
+<ion-view hide-back-button="true">
+   <ion-content class="has-footer">
+   	<h4 class="text-center heading" ng-if="towkens.towkensData.length > 0">Available Towkens</h4>
+   	<h4 class="text-center heading" ng-if="towkens.towkensData.length == 0">No Towkens Available! Check Back Soon!</h4>
+   	<h1 class="text-center" ng-if="towkens.towkensSpinner"><i class="fa fa-spin fa-spinner"></i></h1>
+      <div class="list card" ng-if="!towkens.towkensSpinner" ng-repeat="towken in towkens.towkensData track by $index">
+        <div class="item item-avatar">
+          <span class="badge">{{towken.mile}}</span>
+          <h2>{{towken.business_name}}</h2>
+          <p>{{towken.discount}}</p>
+        </div>
+        <div class="item item-body">
+          <p class="no-mar-top-buttom">{{towken.address}}</p>
+          <p class="no-mar-top-buttom remainingTime text-center">{{towken.time_remaining}}</p>
+          <p>
+            <button class="btn btn-primary btn-block" ng-click="towkens.selectedTowkens(towken)">Select</button>
+          </p>
+        </div>
+      </div>
+   </ion-content>
+</ion-view>

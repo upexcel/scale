@@ -1,0 +1,223 @@
+body{
+	color: #788288;
+}
+.title{
+    color: #fff!important;
+}
+#loginContainer{
+	padding: 16px;
+}
+.loginFormHead{
+	padding-top: 15px;
+	text-align: center;
+}
+.loginFormHead h3{
+	font-size: 30px;
+    font-weight: bold;
+    color: #788288;
+}
+.loginUserTypeText{
+	font-size: 18px;
+	color: #788288;
+}
+.btn-block {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.btn {
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #177bbb;
+    border-color: #177bbb;
+}
+.signIn{
+	margin-top: 20px;
+}
+.no-pad-left-right{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+.no-mar-top-buttom{
+    margin-bottom: 0px!important;
+    margin-top: 0px!important;
+}
+.p-t-10{
+	padding-top: 10px;
+}
+.p-b-10{
+	padding-bottom: 10px;
+}
+.m-t-15{
+	margin-top: 15px;
+}
+.m-b-15{
+	margin-bottom: 15px;
+}
+.font-18{
+	font-size: 18px;
+}
+.border-grey {
+    border: 1px solid #7A7A79;
+    height: 1px;
+}
+.margin-top-or {
+    margin-top: -14px;
+    font-size: 19px;
+    padding-bottom: 5px;
+}
+.btn-facebook {
+    background-color: #3B5998;
+    font-size: 16px;
+}
+.btn-width {
+    width: 100%;
+}
+.btn-google {
+    background-color: #DB4A39;
+    margin-top: 15px;
+    font-size: 16px;
+}
+.fa-float-left {
+    float: left;
+    margin-top: 4px;
+}
+.bar-header .back-button{
+    color: #ffffff!important;
+}
+.buttons-left span button{
+    color: #ffffff!important;
+}
+
+.customer-header{
+	background-color: #595959!important;
+}
+.customer-header .button {
+    border-color: transparent;
+    background-color: #595959!important;
+    color: #fff;
+}
+.customer-header .button:hover {
+    border-color: transparent;
+    background-color: #595959!important;
+    color: #fff;
+}
+.customer-header .button i {
+    font-size: 24px;
+}
+.logo{
+	max-width: 30px;
+}
+.welcome-text{
+	font-size: 17px;
+    font-family: 'SEGOEUIL';
+    font-weight: bold;
+}
+.checkin-circle {
+    text-align: center;
+    height: 192px;
+    width: 192px;
+    font-size: 33px;
+    font-weight: bold;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 145px;
+    background-color: #0070c0;
+    color: #fff;
+    -moz-box-shadow: 6px 2px 12px #3a3939;
+    -webkit-box-shadow: 6px 2px 12px #3a3939;
+    box-shadow: 6px 2px 12px #3a3939;
+    margin: 18px auto;
+}
+.checin-text {
+    margin-top: 36px;
+}
+.angular-google-map-container { height: 400px; }
+
+#settingMenu{
+    background-color: #595959;
+    width: 100%;
+    /*height: 500px;*/
+    position: absolute;
+    top: 43px;
+}
+.avatar{
+    border-radius: 50%;
+}
+.user-name{
+    color: #fff;
+}
+.menu-list{
+    padding: 0px 10px 10px 10px;
+}
+.modal-backdrop {
+    background: transparent!important;
+}
+.modal {
+    display:block !important;
+    }
+.modal .bar-header{
+    background-color: #595959;
+}
+.model-close{
+    background: transparent!important;
+    color: #fff!important;
+}
+.customer-tabs{
+    background-color: #595959;
+}
+.customer-tabs a i{
+    color: #ffffff;
+}
+.activatedTab i{
+    color: #ffffff!important;
+}
+.activatedTab{
+    opacity: 1!important;
+}
+.towkens-table div{
+    padding-left: 0.5px!important;
+    padding-right: 0.5px!important;
+    text-align: center;
+}
+.SelectTowken{
+    padding: 2px!important;
+}
+.badge {
+    line-height: 2!important;
+    border-radius: 16px!important;
+    background-color: orange;
+    min-width: 28px;
+}
+.table-head div{
+    font-weight: bold;
+}
+.heading{
+    font-weight: bold;   
+}
+.item-avatar > span:first-child{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    max-width: 29px;
+    max-height: 40px;
+    border-radius: 50%;
+}
+.remainingTime{
+    color: red!important;
+    font-weight: bold;
+    font-size: 24px!important;
+}
+.platform-android .action-sheet .action-sheet-title{
+    text-align: center!important;
+}
+.platform-android .action-sheet-cancel{
+    display: block!important;
+    text-align: center!important;
+}
+.platform-android .action-sheet .action-sheet-title, .platform-android .action-sheet .button{
+    text-align: center!important;
+}

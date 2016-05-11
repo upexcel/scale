@@ -1,0 +1,19 @@
+<ion-modal-view>
+   <ion-header-bar>
+      <h1 class="title">Update Profile</h1>
+      <button class="button icon ion-close-round model-close" on-tap="profile.updateProfile.hide()"></button>
+   </ion-header-bar>
+   <ion-content>
+      <div class="list">
+         <label class="item item-input item-stacked-label">
+         <span class="input-label">Name</span>
+         <input type="text" ng-model="profile.newName">
+         </label>
+         <label class="item item-input item-stacked-label">
+         <span class="input-label">Email</span>
+         <input type="text" ng-model="profile.newEmail">
+         </label>
+         <button class="button button-block button-assertive" ng-click="profile.updateMyProfile()">Update</button>
+      </div>
+   </ion-content>
+</ion-modal-view>
