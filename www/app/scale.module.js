@@ -1,5 +1,5 @@
 (function() {
     'use strict';
 
-    angular.module('scale', ['ionic', 'ngCordova', 'uiGmapgoogle-maps', 'ngResource', 'ngStorage']);
+    angular.module('scale', ['ionic', 'ngCordova', 'uiGmapgoogle-maps',  'ngResource', 'ngStorage']);
 })();

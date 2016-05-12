@@ -1,0 +1,15 @@
+<ion-view hide-back-button="true">
+    <ion-content>
+        <div class="col-xs-12 p-t-10">
+            <h3 class="text-center welcome-text">Welcome back, {{business.userData.email}}</h3>
+            <p class="text-center">Your location <i class="fa fa-map-marker fa-lg text-primary"></i> Sector 8 Noida</p>
+            <button class="btn btn-primary btn-block MarTop" >Show Customers</button>
+            <button class="btn btn-primary btn-block MarTop" ng-click="business.CreateTowken.show()">Create Towken</button>
+            <div class="MarTop">
+                <ui-gmap-google-map center='business.map.center' zoom='business.map.zoom'>
+                    <ui-gmap-marker coords="business.marker.coords" options="business.marker.options" idkey="business.marker.id"></ui-gmap-marker>
+                </ui-gmap-google-map>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

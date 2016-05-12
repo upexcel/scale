@@ -1,0 +1,53 @@
+<ion-modal-view>
+    <ion-header-bar>
+        <h1 class="title">Create Towken</h1>
+        <button class="button icon ion-close-round model-close" on-tap="business.CreateTowken.hide()"></button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="MarTop" ng-if='business.laterselected'>
+            <label class="modalLevel">Date</label>
+            <datepicker date-format="yyyy-MM-dd" selector="form-control">
+             <input class="form-control" type="date" style="border: 1px solid #ccc;"/>
+            </datepicker>
+        </div>
+        <div class="MarTop" ng-if='business.laterselected'>
+            <label class="modalLevel">Time</label>
+            <select class="form-control" data-val="true" data-val-number="The field Duration must be a number." data-val-required="The Duration field is required." id="duration" name="Duration">
+                    <option ng-repeat='time in business.timeDuration' value="{{time}}">{{time}}</option>
+                </select>
+        </div>
+        <div class="MarTop">
+            <label class="modalLevel">Duration</label>
+            <select class="form-control" data-val="true" data-val-number="The field Duration must be a number." data-val-required="The Duration field is required." id="duration" name="Duration">
+                    <option value="30">30 Minutes</option>
+                    <option value="60">60 Minutes</option>
+                    <option value="120">120 Minutes</option>
+                    <option value="1439">1 Day</option>
+                </select>
+        </div>
+        <div class="MarTop">
+            <label class="modalLevel">Distance</label>
+            <select class="form-control" data-val="true" data-val-number="The field Distance must be a number." data-val-required="The Distance field is required." id="distance" name="Distance">
+                    <option value="5">5 Miles</option>
+                    <option value="10">10 Miles</option>
+                    <option value="25">25 Miles</option>
+                    <option value="50">50 Miles</option>
+                </select>
+        </div>
+        <div class="MarTop">
+            <label class="modalLevel">Type of Discount</label>
+            <select class="form-control" data-val="true" data-val-number="The field Discount must be a number." data-val-required="The Discount field is required." id="discount" name="Discount">
+                    <option value="10">10%</option>
+                    <option value="20">20%</option>
+                </select>
+        </div>
+        <div class="col-md-12 MarTop" style="padding:0px;">
+            <button type="button" name="submit" class="btn btn-s-md btn-primary pull-right pull-right button" >Create!</button>
+            <button type="button" class="btn btn-s-md btn-default button"  on-tap="business.CreateTowken.hide()">Cancel</button>
+        </div>
+        <div class="col-md-12 MarTop text-center">
+            <u><b style="font-size: 15px; cursor: pointer"><a ng-click='business.later()'>Want to schedule a towken at later time?</a></b></u>
+        </div>
+        </div>
+    </ion-content>
+</ion-modal-view>

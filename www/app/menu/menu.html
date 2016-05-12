@@ -7,8 +7,11 @@
                   <img class="avatar" src="app/assets/img/Profile_Default.jpg" alt="...">
                </div>
             </ion-item>
-            <ion-item nav-clear menu-close href="#/app/customers">
+            <ion-item nav-clear menu-close href="#/app/customers" ng-if="menu.customer">
                Customers
+            </ion-item>
+             <ion-item nav-clear menu-close href="#/app/business" ng-if="!menu.customer">
+               Dashboard
             </ion-item>
             <ion-item nav-clear menu-close href="#/app/towkens">
                Towkens
