@@ -8,10 +8,8 @@
         var self = this;
         self.userType = 'user';
         self.signIn = function(){
-            if(self.email == "" && self.password == ""){
-                tostService.notify('Please fill all details', 'top');
-            } else{
-                $ionicLoading.show();
+            if(angular.isDefined(self.email) && angular.isDefined(self.password)){
+                 $ionicLoading.show();
                 var query = loginFactory.save();
                 query.$promise.then(function(data) {
                     tostService.notify('Welcome '+self.email, 'top');
@@ -19,6 +17,9 @@
                     $ionicLoading.hide();
                     $state.go('app.customers');
                 });
+               
+            } else{
+                tostService.notify('Please fill all details', 'top');
             }
         }
     }

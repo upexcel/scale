@@ -4,11 +4,14 @@
     angular.module('scale')
         .controller('menuController', menuController);
 
-    function menuController($state, $ionicPlatform, $ionicHistory, tostService, $timeout, $rootScope, $ionicSideMenuDelegate) {
+    function menuController($state, $ionicPlatform, $localStorage, $ionicHistory, tostService, $timeout, $rootScope, $ionicSideMenuDelegate) {
         var self = this;
         self.mapTab = true;
         self.dataTab = false;
         self.menutabs = true;
+        self.logout=function(){
+            $localStorage.$reset();
+        }
         $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
             if($state.current.name == 'app.customers' || $state.current.name == 'app.towkens'){
                 self.menutabs = true;
