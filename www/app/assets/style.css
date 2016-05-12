@@ -221,3 +221,21 @@ body{
 .platform-android .action-sheet .action-sheet-title, .platform-android .action-sheet .button{
     text-align: center!important;
 }
+.MarTop{
+    margin-top: 15px !important;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.modalLevel{
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+    font-weight: normal;
+}
+.button{
+    min-width: 139px;
+}

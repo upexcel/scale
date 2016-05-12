@@ -52,6 +52,17 @@
                     controllerAs:'profile'
                     }
                 }
+            }) 
+            .state('app.business', {
+                url: '/business',
+                cache: false,
+                views: {
+                    'menuContent': {
+                    templateUrl: 'app/business/business.html',
+                    controller: 'businessController',
+                    controllerAs:'business'
+                    }
+                }
             });
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/login');

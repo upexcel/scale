@@ -4,6 +4,7 @@
             .constant('Configurations', {
             	Hostserver:"app/mockdata",
             	markerIcon:'app/assets/img/business_marker.png',
-            	userMarkerIcon:'app/assets/img/blue_marker.png'
+            	userMarkerIcon:'app/assets/img/blue_marker.png',
+            	HomeMarkerIcon:'app/assets/img/blue_marker.png'
             });
 })();
